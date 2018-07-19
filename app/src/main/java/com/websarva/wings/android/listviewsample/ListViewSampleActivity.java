@@ -10,4 +10,9 @@ public class ListViewSampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_sample);
     }
+
+    private class ListItemClickListener implements AdapterView.OnItemClickListener {
+        @Override
+
+    }
 }
