@@ -9,6 +9,10 @@ public class ListViewSampleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_sample);
+
+        ListView lvMenu = findViewById(R.id.lvMenu);
+
+        lvMenu.setOnItemClickistener(new ListitemClickListener());
     }
 
     private class ListItemClickListener implements AdapterView.OnItemClickListener {
