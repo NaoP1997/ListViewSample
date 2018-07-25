@@ -13,6 +13,13 @@ public class ListViewSampleActivity extends AppCompatActivity {
 
     private class ListItemClickListener implements AdapterView.OnItemClickListener {
         @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+            String item = (String) parent.getItemAtPosition(position);
+
+            String show = "あなたが選んだ定食" ＋ item;
+
+            Toast.makeText(ListViewSampleActivity.this, show, Toast.LENGTH_LONG).show();
+        }
     }
 }
